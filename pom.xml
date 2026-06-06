@@ -23,6 +23,7 @@
 
     <modules>
         <module>CustomerService</module>
+        <module>FraudMicroservice</module>
     </modules>
 
     <dependencyManagement>
