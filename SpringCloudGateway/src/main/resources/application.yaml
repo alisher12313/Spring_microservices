@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: customer-route
+              uri: ${CUSTOMER_ROUTE_URI:http://localhost:8080}
+              predicates:
+                - Path=/api/v1/customers/**
+              filters:
+                - PrefixPath=/
+
+
+server:
+  port: 8085

@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/CustomerService/pom.xml" />
         <option value="$PROJECT_DIR$/FraudMicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/springCloudGateway/pom.xml" />
       </list>
     </option>
   </component>
