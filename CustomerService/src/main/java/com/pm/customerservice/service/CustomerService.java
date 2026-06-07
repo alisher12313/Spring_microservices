@@ -27,7 +27,7 @@ public class CustomerService {
 
         //todo: check for valid unique email and then store
         customerRepository.saveAndFlush(customer1);
-        log.info("Customer registered: " + customer1 + ". Checking for fraud...");
+        log.info("Customer registered: " + customer1.toString() + ". Checking for fraud...");
         FraudCheckResponseDto fraudster = fraudClient.isFraudster(customer1.getId());
 
         if(fraudster.isFraudster()){
