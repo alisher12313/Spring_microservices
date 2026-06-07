@@ -33,5 +33,7 @@ public class CustomerService {
         if(fraudster.isFraudster()){
             throw new IllegalArgumentException("Fraudster detected");
         }
+
+        log.info("Fraud check finished. No suspicious actions were detected.");
     }
 }
