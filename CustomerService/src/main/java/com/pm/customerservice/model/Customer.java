@@ -11,6 +11,7 @@ import org.hibernate.type.SqlTypes;
 @Entity(name = "customer")
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_id_sequence")
